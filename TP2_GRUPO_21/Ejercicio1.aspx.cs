@@ -13,5 +13,21 @@ namespace TP2_GRUPO_21
         {
 
         }
+
+        protected void btnGenerar_Click(object sender, EventArgs e)
+        {
+            string producto1 = txtProducto1.Text;
+            string producto2 = txtProducto2.Text;
+            int cantidad1 = int.Parse(txtCantidad1.Text);
+            int cantidad2 = int.Parse(txtCantidad2.Text);
+            int total = cantidad1 + cantidad2;
+
+            string tabla = "<table border='1'>";
+            tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
+            tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td></tr>";
+            tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td></tr>";
+            
+            lblTabla.Text = tabla;
+        }
     }
 }
