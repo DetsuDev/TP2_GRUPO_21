@@ -26,7 +26,7 @@ namespace TP2_GRUPO_21
             tabla += "<tr><th>Producto</th><th>Cantidad</th></tr>";
             tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td></tr>";
             tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td></tr>";
-            
+            tabla += "<tr><td> Total </td><td>" + total + "</td></tr>";
             lblTabla.Text = tabla;
         }
     }
