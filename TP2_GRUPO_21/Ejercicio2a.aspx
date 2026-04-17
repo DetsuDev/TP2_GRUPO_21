@@ -4,29 +4,52 @@
 <head runat="server"><title>Ejercicio 2</title></head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:Label runat="server" Text="Nombre:"></asp:Label>
-            <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
-            <br />
-            <asp:Label runat="server"  Text="Apellido:"></asp:Label>
-            <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
-            <br />
-            <asp:Label runat="server" Text="Ciudad:"></asp:Label>
-            <asp:DropDownList ID="ddlCiudad" runat="server">
-                <asp:ListItem Text="Gral. Pacheco" Value="zona norte"></asp:ListItem>
-                <asp:ListItem Text="San Miguel" Value="zona oeste"></asp:ListItem>
-                <asp:ListItem Text="Boedo" Value="zona sur"></asp:ListItem>
-            </asp:DropDownList>
-            <br />
-            <asp:Label runat="server" Text="Temas:"></asp:Label>
-            <asp:CheckBoxList ID="chkTemas" runat="server">
-                <asp:ListItem Text="Ciencias"></asp:ListItem>
-                <asp:ListItem Text="Literatura"></asp:ListItem>
-                <asp:ListItem Text="Historia"></asp:ListItem>
-            </asp:CheckBoxList>
-            <br />
-            <asp:Button ID="btnVerResumen" runat="server" Text="Ver resumen" OnClick="btnVerResumen_Click" />
-        </div>
-    </form>
+    <asp:Panel ID="pnlCarga" runat="server">
+        <h2>Ingreso de Datos</h2>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><asp:TextBox ID="txtNombre" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                <td><asp:TextBox ID="txtApellido" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Ciudad:</td>
+                <td>
+                    <asp:DropDownList ID="ddlCiudades" runat="server">
+                        <asp:ListItem Value="Norte">Gral. Pacheco</asp:ListItem>
+                        <asp:ListItem Value="Oeste">San Miguel</asp:ListItem>
+                        <asp:ListItem Value="Sur">Boedo</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+        </table>
+        <br />
+        Temas:<br />
+        <asp:CheckBoxList ID="cblTemas" runat="server">
+            <asp:ListItem>Ciencias</asp:ListItem>
+            <asp:ListItem>Literatura</asp:ListItem>
+            <asp:ListItem>Historia</asp:ListItem>
+        </asp:CheckBoxList>
+        <br />
+        <asp:Button ID="btnVerResumen" runat="server" Text="Ver resumen" OnClick="btnVerResumen_Click" />
+    </asp:Panel>
+
+    <asp:Panel ID="pnlResumen" runat="server" Visible="false">
+        <h1>Resumen</h1>
+        <p>Nombre: <b><asp:Label ID="lblNombre" runat="server"></asp:Label></b></p>
+        <p>Apellido: <b><asp:Label ID="lblApellido" runat="server"></asp:Label></b></p>
+        <p>Zona: <b><asp:Label ID="lblZona" runat="server"></asp:Label></b></p>
+        
+        <p>Los temas elegidos son: <br />
+           <asp:Label ID="lblTemas" runat="server" ></asp:Label>
+        </p>
+        
+        <br />
+        <asp:Button ID="btnVolver" runat="server" Text="Volver a cargar" OnClick="btnVolver_Click" />
+    </asp:Panel>
+</form>
 </body>
 </html>
