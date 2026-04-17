@@ -13,5 +13,18 @@ namespace TP2_GRUPO_21
         {
 
         }
+
+        protected void btnValidar_Click(object sender, EventArgs e)
+        {
+            
+            if (txtUsuario.Text == "claudio")
+            {
+                btnValidar.Text = "Nombre Correcto!";
+            } else
+            {
+                btnValidar.Text = "Nombre Incorrecto!";
+            }
+        }
+
     }
 }

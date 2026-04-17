@@ -9,6 +9,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:LinkButton ID="LinkRojo" runat="server" OnClick="LinkRojo_Click">Rojo</asp:LinkButton>
+            <br />
+            <asp:LinkButton ID="LinkAzul" runat="server" OnClick="LinkAzul_Click">Azul</asp:LinkButton>
+            <br />
+            <asp:LinkButton ID="LinkVerde" runat="server" OnClick="LinkVerde_Click">Verde</asp:LinkButton>
+            <br />
+            <br />
+            <asp:Label ID="lblColor" runat="server" Text="Texto coloreado"></asp:Label>
         </div>
     </form>
 </body>

@@ -13,5 +13,22 @@ namespace TP2_GRUPO_21
         {
 
         }
+
+        protected void LinkRojo_Click(object sender, EventArgs e)
+        {
+            lblColor.ForeColor = System.Drawing.Color.Red;
+        }
+
+        protected void LinkAzul_Click(object sender, EventArgs e)
+        {
+
+            lblColor.ForeColor = System.Drawing.Color.Blue;
+        }
+
+        protected void LinkVerde_Click(object sender, EventArgs e)
+        {
+            lblColor.ForeColor = System.Drawing.Color.Green;
+        }
+
     }
 }
