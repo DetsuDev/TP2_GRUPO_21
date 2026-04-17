@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Ejercicio1.aspx" />
     <Content Include="Ejercicio2.aspx" />
+    <Content Include="Ejercicio2a.aspx" />
     <Content Include="Ejercicio3.aspx" />
     <Content Include="Ejercicio4.aspx" />
     <Content Include="Ejercicio5.aspx" />
