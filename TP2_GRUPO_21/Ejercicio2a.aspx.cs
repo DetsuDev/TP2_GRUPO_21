@@ -16,7 +16,21 @@ namespace TP2_GRUPO_21
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
+            lblNombre.Text = txtNombre.Text;
+            lblApellido.Text = txtApellido.Text;
+            lblZona.Text = ddlCiudades.SelectedValue;
 
+            pnlCarga.Visible = false;
+            pnlResumen.Visible = true;
+        
+        }
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            pnlCarga.Visible = true;
+            pnlResumen.Visible = false;
+
+            txtNombre.Text = "";
+            txtApellido.Text = "";
         }
     }
 }
