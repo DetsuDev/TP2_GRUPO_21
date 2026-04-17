@@ -13,5 +13,24 @@ namespace TP2_GRUPO_21
         {
 
         }
+
+        protected void btnCalcular_Click(object sender, EventArgs e)
+        {
+            float precioTotal = 0;
+            if (dpMemoria.SelectedValue == "2GB")
+            {
+                precioTotal += 200;
+            }
+            if (dpMemoria.SelectedValue == "4GB")
+            {
+                precioTotal += 375;
+            }
+            if (dpMemoria.SelectedValue == "8GB")
+            {
+                precioTotal += 500;
+            }
+
+            btnCalcular.Text = "El precio total es: " + precioTotal.ToString();
+        }
     }
 }
