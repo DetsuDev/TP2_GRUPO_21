@@ -58,5 +58,6 @@ namespace TP2_GRUPO_21
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblColor;
+        protected global::System.Web.UI.WebControls.Button btnReset;
     }
 }

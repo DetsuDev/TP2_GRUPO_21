@@ -17,6 +17,8 @@
             <br />
             <br />
             <asp:Label ID="lblColor" runat="server" Text="Texto coloreado"></asp:Label>
+            <br/>
+            <asp:Button ID="btnReset" runat="server" Text="Resetear color" OnClick="btnReset_Click" />
         </div>
     </form>
 </body>

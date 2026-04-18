@@ -29,6 +29,9 @@ namespace TP2_GRUPO_21
         {
             lblColor.ForeColor = System.Drawing.Color.Green;
         }
-
+            protected void btnReset_Click(object sender, EventArgs e)
+            {
+                lblColor.ForeColor = System.Drawing.Color.Black;
+            }
     }
 }
