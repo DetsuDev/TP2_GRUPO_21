@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body> 
     <form id="form1" runat="server">
         <div>
             <asp:LinkButton ID="LinkRojo" runat="server" OnClick="LinkRojo_Click">Rojo</asp:LinkButton>

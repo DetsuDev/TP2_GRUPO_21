@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TP2_GRUPO_21
+namespace TP2_GRUPO_21 
 {
     public partial class Ejercicio4 : System.Web.UI.Page
     {
