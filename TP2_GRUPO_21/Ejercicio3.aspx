@@ -9,13 +9,12 @@
 <body> 
     <form id="form1" runat="server">
         <div>
-            <asp:LinkButton ID="LinkRojo" runat="server" OnClick="LinkRojo_Click">Rojo</asp:LinkButton>
-            <br />
-            <asp:LinkButton ID="LinkAzul" runat="server" OnClick="LinkAzul_Click">Azul</asp:LinkButton>
-            <br />
-            <asp:LinkButton ID="LinkVerde" runat="server" OnClick="LinkVerde_Click">Verde</asp:LinkButton>
-            <br />
-            <asp:LinkButton ID="LinkNaranja" runat="server" OnClick="LinkNaranja_Click">Naranja</asp:LinkButton>
+            <asp:DropDownList ID="ddlColores" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DdlColores_Seleccionado">
+                <asp:ListItem Value="Red">Rojo</asp:ListItem>
+                <asp:ListItem Value="Blue">Azul</asp:ListItem>
+                <asp:ListItem Value="Green">Verde</asp:ListItem>
+                <asp:ListItem Value="Orange">Naranja</asp:ListItem>
+            </asp:DropDownList>
             <br />
             <asp:Label ID="lblColor" runat="server" Text="Texto coloreado"></asp:Label>
             <br/>
