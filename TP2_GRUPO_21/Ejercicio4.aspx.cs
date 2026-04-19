@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,19 @@ namespace TP2_GRUPO_21
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
+        protected void btnValidar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
+            { 
+                Response.Redirect("Ejercicio4b.aspx?msj=" + txtUsuario.Text);
+            }
+            else
+            {
+              Response.Redirect("Ejercicio4c.aspx");
+            }
+        }
+
     }
 }
