@@ -32,8 +32,8 @@ namespace TP2_GRUPO_21
 
             Server.Transfer("Ejercicio2.aspx");
 
-            pnlCarga.Visible = false;
-            pnlResumen.Visible = true;
+            //pnlCarga.Visible = false;
+            //pnlResumen.Visible = true;
         
         }
         protected void btnVolver_Click(object sender, EventArgs e)
