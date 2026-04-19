@@ -20,6 +20,16 @@ namespace TP2_GRUPO_21
             lblApellido.Text = txtApellido.Text;
             lblZona.Text = ddlCiudades.SelectedValue;
 
+            string aux = "";
+            foreach (ListItem item in cblTemas.Items)
+            {
+                if (item.Selected)
+                {
+                    aux += item.Text + "<br />";
+                }
+                lblTemas.Text = aux;
+            }
+
             pnlCarga.Visible = false;
             pnlResumen.Visible = true;
         
