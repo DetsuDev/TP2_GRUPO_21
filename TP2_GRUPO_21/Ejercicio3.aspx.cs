@@ -33,5 +33,10 @@ namespace TP2_GRUPO_21
             {
                 lblColor.ForeColor = System.Drawing.Color.Black;
             }
+
+        protected void LinkNaranja_Click(object sender, EventArgs e)
+        {
+            lblColor.ForeColor = System.Drawing.Color.Orange;
+        }
     }
 }
