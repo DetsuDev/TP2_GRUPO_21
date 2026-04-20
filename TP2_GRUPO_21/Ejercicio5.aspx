@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio5.aspx.cs" Inherits="TP2_GRUPO_21.Ejercicio5" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title> 
@@ -34,6 +32,8 @@
         <p>
             <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular Precio" />
         </p>
+        <asp:Label ID="lblCantidadItems" runat="server"></asp:Label>
+        <br />
         <asp:Label ID="lblPrecioSinIva" runat="server" Font-Bold="False" Font-Size="Small" ForeColor="#666666"></asp:Label>
         <br />
         <asp:Label ID="lblPrecio" runat="server" Font-Bold="True"></asp:Label>

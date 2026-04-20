@@ -11,7 +11,6 @@ namespace TP2_GRUPO_21
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void btnCalcular_Click(object sender, EventArgs e)
@@ -29,11 +28,13 @@ namespace TP2_GRUPO_21
             {
                 precioTotal += 500;
             }
-             
+
+            int cantidadItems = 0;
             for (int i = 0; i < cblAccesorios.Items.Count; i++)
             {
                 if (cblAccesorios.Items[i].Selected)
                 {
+                    cantidadItems++;
                     if (cblAccesorios.Items[i].Value == "Monitor")
                     {
                         precioTotal += 2000.50f;
@@ -49,7 +50,8 @@ namespace TP2_GRUPO_21
                 }
             }
 
-            lblPrecioSinIva.Text = "El Precio sin IVA es de " + (precioTotal*0.79).ToString("N2") + " $";
+            lblCantidadItems.Text = "Accesorios seleccionados: " + cantidadItems;
+            lblPrecioSinIva.Text = "El Precio sin IVA es de " + (precioTotal * 0.79).ToString("N2") + " $";
             lblPrecio.Text = "El Precio final es de " + precioTotal.ToString("N2") + " $";
         }
     }

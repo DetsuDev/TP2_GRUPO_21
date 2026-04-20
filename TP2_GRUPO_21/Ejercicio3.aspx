@@ -1,7 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio3.aspx.cs" Inherits="TP2_GRUPO_21.Ejercicio3" %>
-
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -20,6 +18,7 @@
             <br/>
             <asp:Button ID="btnReset" runat="server" Text="Resetear color" OnClick="btnReset_Click" />
             <asp:Button ID="btnNegrita" runat="server" OnClick="btnNegrita_Click" Text="Alternar Negrita" />
+            <asp:Button ID="btnTamanio" runat="server" Text="Agrandar texto" OnClick="btnTamanio_Click" />
         </div>
     </form>
 </body>
