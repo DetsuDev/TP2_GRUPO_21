@@ -34,6 +34,8 @@
         <p>
             <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular Precio" />
         </p>
+        <asp:Label ID="lblPrecioSinIva" runat="server" Font-Bold="False" Font-Size="Small" ForeColor="#666666"></asp:Label>
+        <br />
         <asp:Label ID="lblPrecio" runat="server" Font-Bold="True"></asp:Label>
     </form>
 </body>

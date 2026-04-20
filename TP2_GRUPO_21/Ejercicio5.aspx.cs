@@ -49,6 +49,7 @@ namespace TP2_GRUPO_21
                 }
             }
 
+            lblPrecioSinIva.Text = "El Precio sin IVA es de " + (precioTotal*0.79).ToString("N2") + " $";
             lblPrecio.Text = "El Precio final es de " + precioTotal.ToString("N2") + " $";
         }
     }

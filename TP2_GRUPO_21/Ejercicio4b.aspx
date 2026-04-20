@@ -6,6 +6,8 @@
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="lblBienvenida" runat="server"></asp:Label>
+            <br />
+            <asp:Button ID="btnVolver" runat="server" Text="Cerrar Sesion" OnClick="btnCerrar_Click" />
         </div>
     </form>
 </body>

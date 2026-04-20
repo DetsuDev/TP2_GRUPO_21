@@ -19,6 +19,7 @@
             <asp:Label ID="lblColor" runat="server" Text="Texto coloreado"></asp:Label>
             <br/>
             <asp:Button ID="btnReset" runat="server" Text="Resetear color" OnClick="btnReset_Click" />
+            <asp:Button ID="btnNegrita" runat="server" OnClick="btnNegrita_Click" Text="Alternar Negrita" />
         </div>
     </form>
 </body>
