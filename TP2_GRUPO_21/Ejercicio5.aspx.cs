@@ -13,5 +13,43 @@ namespace TP2_GRUPO_21
         {
 
         }
+
+        protected void btnCalcular_Click(object sender, EventArgs e)
+        {
+            float precioTotal = 0;
+            if (dpMemoria.SelectedValue == "2GB")
+            {
+                precioTotal += 200;
+            }
+            if (dpMemoria.SelectedValue == "4GB")
+            {
+                precioTotal += 375;
+            }
+            if (dpMemoria.SelectedValue == "6GB")
+            {
+                precioTotal += 500;
+            }
+
+            for (int i = 0; i < cblAccesorios.Items.Count; i++)
+            {
+                if (cblAccesorios.Items[i].Selected)
+                {
+                    if (cblAccesorios.Items[i].Value == "Monitor")
+                    {
+                        precioTotal += 2000.50f;
+                    }
+                    if (cblAccesorios.Items[i].Value == "HD")
+                    {
+                        precioTotal += 550.50f;
+                    }
+                    if (cblAccesorios.Items[i].Value == "Grabador")
+                    {
+                        precioTotal += 1200f;
+                    }
+                }
+            }
+
+            btnCalcular.Text = "El precio total es: " + precioTotal.ToString("N2");
+        }
     }
 }
