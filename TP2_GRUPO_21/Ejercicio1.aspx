@@ -10,15 +10,11 @@
         <div>
             <asp:Label runat="server" Text="Ingrese nombre del producto:"></asp:Label>
             <asp:TextBox ID="txtProducto1" runat="server"></asp:TextBox>
-            <asp:Label ID="Label1" runat="server" Text="Valor Unitario"></asp:Label>
-            <asp:TextBox ID="tbValorUnitario1" runat="server"></asp:TextBox>
             <asp:Label runat="server" Text="Cantidad:"></asp:Label>
             <asp:TextBox ID="txtCantidad1" runat="server"></asp:TextBox>
             <br />
             <asp:Label runat="server" Text="Ingrese nombre del producto:"></asp:Label>
             <asp:TextBox ID="txtProducto2" runat="server"></asp:TextBox>
-            <asp:Label ID="Label2" runat="server" Text="Valor Unitario"></asp:Label>
-            <asp:TextBox ID="tbValorUnitario2" runat="server"></asp:TextBox>
             <asp:Label runat="server" Text="Cantidad:"></asp:Label>
             <asp:TextBox ID="txtCantidad2" runat="server"></asp:TextBox>
             <br />

@@ -9,15 +9,7 @@
 <body> 
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblUsuario" runat="server" Text="Usuario:"></asp:Label>
-            <asp:TextBox ID="txtUsuario" runat="server" style="margin-left: 20px"></asp:TextBox>
-            <br />
-            <asp:Label ID="lblClave" runat="server" Text="Clave:"></asp:Label>
-            <asp:TextBox ID="txtClave" runat="server" style="margin-left: 32px" TextMode="Password"></asp:TextBox>
         </div>
-        <p>
-            <asp:Button ID="btnValidar" runat="server" OnClick="btnValidar_Click" Text="Validar" />
-        </p>
     </form>
 </body>
 </html>

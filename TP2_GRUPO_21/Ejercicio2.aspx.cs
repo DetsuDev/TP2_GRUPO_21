@@ -11,9 +11,6 @@ namespace TP2_GRUPO_21
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string nombre = Request["txtNombre"].ToString();
-            string apellido = Request["txtApellido"].ToString();
-            string ciudad = Request["ddlCiudades.SelectedValue"].ToString();
 
         }
     }

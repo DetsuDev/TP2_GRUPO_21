@@ -16,24 +16,12 @@ namespace TP2_GRUPO_21
 
         protected void btnVerResumen_Click(object sender, EventArgs e)
         {
-            //string nombre = txtNombre.Text;
-            //string apellido = txtApellido.Text;
-            //string zona = ddlCiudades.SelectedValue;
+            lblNombre.Text = txtNombre.Text;
+            lblApellido.Text = txtApellido.Text;
+            lblZona.Text = ddlCiudades.SelectedValue;
 
-            string temas = "";
-            foreach (ListItem item in cblTemas.Items)
-            {
-                if (item.Selected)
-                {
-                    temas += item.Text + "<br />";
-                }
-                lblTemas.Text = temas;
-            }
-
-            Server.Transfer("Ejercicio2.aspx");
-
-            //pnlCarga.Visible = false;
-            //pnlResumen.Visible = true;
+            pnlCarga.Visible = false;
+            pnlResumen.Visible = true;
         
         }
         protected void btnVolver_Click(object sender, EventArgs e)

@@ -9,7 +9,7 @@
 
 namespace TP2_GRUPO_21
 {
-
+     
 
     public partial class Ejercicio5
     {
@@ -49,6 +49,24 @@ namespace TP2_GRUPO_21
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList dpMemoria;
+
+        /// <summary>
+        /// Control lblConfiguracion1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConfiguracion1;
+
+        /// <summary>
+        /// Control cblAccesorios.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList cblAccesorios;
 
         /// <summary>
         /// Control btnCalcular.

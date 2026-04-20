@@ -20,10 +20,7 @@ namespace TP2_GRUPO_21
             string producto2 = txtProducto2.Text;
             int cantidad1 = int.Parse(txtCantidad1.Text);
             int cantidad2 = int.Parse(txtCantidad2.Text);
-            int valor_total1 = int.Parse(tbValorUnitario1.Text) * cantidad1;
-            int valor_total2 = int.Parse(tbValorUnitario2.Text) * cantidad2;
             int total = cantidad1 + cantidad2;
-            int valor_final = valor_total1 + valor_total2;
 
             string tabla = "<table border='1' style='background-color:#fff4ed'>";
             tabla += "<tr><th>Producto</th><th>Cantidad</th><th>Valor total</th></tr>";
