@@ -25,11 +25,11 @@ namespace TP2_GRUPO_21
             int total = cantidad1 + cantidad2;
             int valor_final = valor_total1 + valor_total2;
 
-            string tabla = "<table border='1'>";
+            string tabla = "<table border='1' style='background-color:#fff4ed'>";
             tabla += "<tr><th>Producto</th><th>Cantidad</th><th>Valor total</th></tr>";
-            tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td><td>" + valor_total1 + "</td></tr>";
-            tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td><td>" + valor_total2 + "</td></tr>";
-            tabla += "<tr><td> Total </td><td>" + total + "</td><td>" + valor_final + "</td></tr>";
+            tabla += "<tr><td>" + producto1 + "</td><td>" + cantidad1 + "</td><td> $" + valor_total1 + "</td></tr>";
+            tabla += "<tr><td>" + producto2 + "</td><td>" + cantidad2 + "</td><td> $" + valor_total2 + "</td></tr>";
+            tabla += "<tr style='background-color:#ffe8d4' !important><td> Total </td><td>" + total + "</td><td> $" + valor_final + "</td></tr>";
             lblTabla.Text = tabla;
         }
     }
