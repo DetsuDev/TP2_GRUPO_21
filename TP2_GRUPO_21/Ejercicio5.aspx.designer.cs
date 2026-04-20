@@ -9,7 +9,7 @@
 
 namespace TP2_GRUPO_21
 {
-
+     
 
     public partial class Ejercicio5
     {

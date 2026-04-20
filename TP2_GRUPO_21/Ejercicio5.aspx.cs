@@ -29,7 +29,7 @@ namespace TP2_GRUPO_21
             {
                 precioTotal += 500;
             }
-
+             
             for (int i = 0; i < cblAccesorios.Items.Count; i++)
             {
                 if (cblAccesorios.Items[i].Selected)
