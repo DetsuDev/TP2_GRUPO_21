@@ -14,5 +14,10 @@ namespace TP2_GRUPO_21
             string nombre = Request.QueryString["msj"];
             lblBienvenida.Text = "<h1>Bienvenido a mi página Sr./a " + nombre + "</h1>";
         }
+
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio4.aspx");
+        }
     }
 }

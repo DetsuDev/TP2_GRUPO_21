@@ -18,29 +18,22 @@ namespace TP2_GRUPO_21
             string colorSeleccionado = ddlColores.SelectedValue;
             lblColor.ForeColor = System.Drawing.Color.FromName(colorSeleccionado);
         }
-        //protected void LinkRojo_Click(object sender, EventArgs e)
-        //{
-        //    lblColor.ForeColor = System.Drawing.Color.Red;
-        //}
-
-        //protected void LinkAzul_Click(object sender, EventArgs e)
-        //{
-
-        //    lblColor.ForeColor = System.Drawing.Color.Blue;
-        //}
-
-        //protected void LinkVerde_Click(object sender, EventArgs e)
-        //{
-        //    lblColor.ForeColor = System.Drawing.Color.Green;
-        //}
         protected void btnReset_Click(object sender, EventArgs e)
         {
             lblColor.ForeColor = System.Drawing.Color.Black;
             ddlColores.SelectedIndex = 0;
         }
-        //protected void LinkNaranja_Click(object sender, EventArgs e)
-        //{
-        //    lblColor.ForeColor = System.Drawing.Color.Orange;
-        //}
+
+        protected void btnNegrita_Click(object sender, EventArgs e)
+        {
+            if (lblColor.Font.Bold)
+            {
+                lblColor.Font.Bold = false;
+            }
+            else
+            {
+                lblColor.Font.Bold = true;
+            }
+        }
     }
 }

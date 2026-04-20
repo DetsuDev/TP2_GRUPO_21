@@ -19,6 +19,8 @@ namespace TP2_GRUPO_21
             if (txtUsuario.Text == "claudio" && txtClave.Text == "casas")
             { 
                 Response.Redirect("Ejercicio4b.aspx?msj=" + txtUsuario.Text);
+                txtUsuario.Text = "";
+                txtClave.Text = "";
             }
             else
             {
