@@ -34,6 +34,7 @@
         <p>
             <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular Precio" />
         </p>
+        <asp:Label ID="lblPrecio" runat="server" Font-Bold="True"></asp:Label>
     </form>
 </body>
 </html>

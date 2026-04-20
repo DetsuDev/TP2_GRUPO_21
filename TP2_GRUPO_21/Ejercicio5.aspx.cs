@@ -49,7 +49,7 @@ namespace TP2_GRUPO_21
                 }
             }
 
-            btnCalcular.Text = "El precio total es: " + precioTotal.ToString("N2");
+            lblPrecio.Text = "El Precio final es de " + precioTotal.ToString("N2") + " $";
         }
     }
 }
