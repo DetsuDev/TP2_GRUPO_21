@@ -46,5 +46,17 @@ namespace TP2_GRUPO_21
                 btnTamanio.Text = "Agrandar texto";
             }
         }
+
+        protected void btnTamanio1_Click(object sender, EventArgs e)
+        {
+            if (lblColor.Font.Size == FontUnit.Point(12))
+            {
+                lblColor.Font.Size = FontUnit.Point(8);
+            }
+            else
+            {
+                lblColor.Font.Size = FontUnit.Point(12);
+            }
+        }
     }
 }
