@@ -7,10 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace TP2_GRUPO_21
 {
-    public partial class Ejercicio2a : System.Web.UI.Page
+    public partial class Ejercicio2a1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { 
+
 
         }
 
@@ -47,11 +48,13 @@ namespace TP2_GRUPO_21
                 lblErrorTemas.ForeColor = System.Drawing.Color.Red;
                 return;
             }
-            
 
-            lblNombre.Text = txtNombre.Text;
-            lblApellido.Text = txtApellido.Text;
-            lblZona.Text = ddlCiudades.SelectedValue;
+
+            //lblNombre.Text = txtNombre.Text;
+            //lblApellido.Text = txtApellido.Text;
+            //lblZona.Text = ddlCiudades.SelectedValue;
+            Server.Transfer("Ejercicio2b.aspx");
+
 
             string temas = "";
             foreach (ListItem item in cblTemas.Items)
@@ -59,19 +62,9 @@ namespace TP2_GRUPO_21
                 if (item.Selected)
                     temas += item.Text + "<br/>";
             }
-            lblTemas.Text = temas;
 
-            pnlCarga.Visible = false;
-            pnlResumen.Visible = true;
 
-        }
-        protected void btnVolver_Click(object sender, EventArgs e)
-        {
-            pnlCarga.Visible = true;
-            pnlResumen.Visible = false;
 
-            txtNombre.Text = "";
-            txtApellido.Text = "";
         }
     }
 }
