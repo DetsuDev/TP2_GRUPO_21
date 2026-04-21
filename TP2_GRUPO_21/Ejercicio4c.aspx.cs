@@ -12,6 +12,7 @@ namespace TP2_GRUPO_21
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            htmlTag.Style["background-color"] = "red";
             lblError.Text = "<h1>USUARIO INVALIDO INGRESO NO PERMITIDO</h1>";
         }
     }

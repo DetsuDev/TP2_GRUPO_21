@@ -27,6 +27,7 @@
                 <asp:ListItem Value="Monitor">Monitor LCD</asp:ListItem>
                 <asp:ListItem Value="HD">HD 500GB</asp:ListItem>
                 <asp:ListItem Value="Grabador">Grabador DVD</asp:ListItem>
+                <asp:ListItem Value="Tarjeta">Tarjeta grafica</asp:ListItem>
             </asp:CheckBoxList>
         </div>
         <p>

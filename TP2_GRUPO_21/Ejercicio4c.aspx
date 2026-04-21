@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejercicio4c.aspx.cs" Inherits="TP2_GRUPO_21.Ejercicio4c" %>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" runat="server" id="htmlTag">
 <head runat="server">
     <title>Error de Ingreso</title>
 </head>

@@ -47,6 +47,10 @@ namespace TP2_GRUPO_21
                     {
                         precioTotal += 1200f;
                     }
+                    if (cblAccesorios.Items[i].Value == "Tarjeta")
+                    {
+                        precioTotal += 9000f;
+                    }
                 }
             }
 

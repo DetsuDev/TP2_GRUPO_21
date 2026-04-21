@@ -11,6 +11,7 @@ namespace TP2_GRUPO_21
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            htmlTag.Style["background-color"] = "green";
             string nombre = Request.QueryString["msj"];
             lblBienvenida.Text = "<h1>Bienvenido a mi página Sr./a " + nombre + "</h1>";
         }
